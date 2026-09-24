@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="BabyPet Petshop — banho, tosa, leva e traz, acessórios, rações e atendimento especial em Balneário Rincão e região.">
-  <meta name="theme-color" content="#F8F6F0">
+  <meta name="theme-color" content="#E07A5F">
   <title>BabyPet Petshop | Tudo que o seu Pet precisa, está aqui!</title>
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="apple-touch-icon" href="images/logo.png">
@@ -37,32 +37,32 @@
 </head>
 
 <body>
-  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 border-b border-transparent bg-cream/70 backdrop-blur-md transition-all duration-300">
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 border-b border-white/20 bg-terracotta shadow-sm transition-all duration-300">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
       <a href="#inicio" class="group flex items-center gap-3" aria-label="BabyPet início">
-        <span class="grid h-11 w-11 place-items-center overflow-hidden rounded-2xl bg-white"><img src="images/logo.png" alt="BabyPet" class="h-full w-full object-contain"></span>
-        <span class="font-display text-xl font-extrabold tracking-tight">BabyPet<span class="text-terracotta">.</span></span>
+        <span class="grid h-14 w-14 place-items-center overflow-hidden rounded-2xl bg-white shadow-sm"><img src="images/logo.png" alt="BabyPet" class="h-full w-full object-contain"></span>
+        <span class="font-display text-2xl font-extrabold tracking-tight">BabyPet<span class="text-terracotta">.</span></span>
       </a>
 
       <nav class="hidden items-center gap-8 lg:flex" aria-label="Navegação principal">
-        <a class="text-sm font-semibold text-ink/70 transition hover:text-terracotta" href="#servicos">Serviços</a>
+        <a class="text-sm font-semibold text-white/90 transition hover:text-white" href="#servicos">Serviços</a>
         <a class="text-sm font-semibold text-ink/70 transition hover:text-terracotta" href="#leva-traz">Leva &amp; Traz</a>
         <a class="text-sm font-semibold text-ink/70 transition hover:text-terracotta" href="#avaliacoes">Depoimentos</a>
         <a class="text-sm font-semibold text-ink/70 transition hover:text-terracotta" href="#contato">Contato</a>
       </nav>
 
-      <a href="https://wa.me/554896495772?text=Olá%20BabyPet!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn hidden rounded-full bg-terracotta px-5 py-3 text-sm font-bold text-white lg:inline-flex">
+      <a href="https://wa.me/554896495772?text=Olá%20BabyPet!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn hidden rounded-full bg-white px-5 py-3 text-sm font-bold text-ink lg:inline-flex">
         Agendar pelo WhatsApp
       </a>
 
-      <button id="menu-btn" class="grid h-11 w-11 place-items-center rounded-full border border-line bg-white lg:hidden" aria-label="Abrir menu" aria-expanded="false">
+      <button id="menu-btn" class="grid h-11 w-11 place-items-center rounded-full border border-white/30 bg-white/15 text-white lg:hidden" aria-label="Abrir menu" aria-expanded="false">
         <span class="text-xl">☰</span>
       </button>
     </div>
 
-    <div id="mobile-menu" class="hidden border-t border-line bg-cream px-5 py-5 lg:hidden">
+    <div id="mobile-menu" class="hidden border-t border-white/20 bg-terracotta px-5 py-5 lg:hidden">
       <nav class="flex flex-col gap-5">
-        <a href="#servicos" class="mobile-link font-semibold">Serviços</a>
+        <a href="#servicos" class="mobile-link font-semibold text-white">Serviços</a>
         <a href="#leva-traz" class="mobile-link font-semibold">Leva &amp; Traz</a>
         <a href="#avaliacoes" class="mobile-link font-semibold">Depoimentos</a>
         <a href="#contato" class="mobile-link font-semibold">Contato</a>
@@ -195,7 +195,7 @@
             <p class="text-xs font-bold uppercase tracking-[.2em] text-terracotta">Um pouco da experiência</p>
             <h2 class="mt-4 text-4xl font-extrabold tracking-[-.035em] sm:text-5xl">Carinho que aparece.</h2>
           </div>
-          <p class="max-w-md text-sm leading-6 text-ink/55">Imagens demonstrativas — substitua pelas fotos reais da BabyPet antes da publicação.</p>
+          <p class="max-w-md text-sm leading-6 text-ink/55">Momentos especiais da BabyPet e dos pets que passam por aqui.</p>
         </div>
         <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <div class="gallery-card reveal overflow-hidden rounded-3xl bg-white p-2"><img class="pet-image h-80 w-full rounded-[1.4rem] object-cover" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=900&q=85" alt="Pet em atendimento" loading="lazy"></div>
@@ -206,42 +206,19 @@
     </section>
 
     <section id="avaliacoes" class="py-24 lg:py-32">
-      <div class="mx-auto max-w-4xl px-5 text-center lg:px-8">
-        <div class="reveal">
-          <p class="text-xs font-bold uppercase tracking-[.2em] text-sage">Depoimentos</p>
-          <h2 class="mt-4 text-4xl font-extrabold tracking-[-.035em] sm:text-5xl">Quem confia, conta.</h2>
-        </div>
-
-        <div class="reveal mt-12 overflow-hidden">
-          <div id="testimonial-track" class="flex transition-transform duration-500 ease-out">
-            <article class="min-w-full px-2">
-              <div class="rounded-[2rem] border border-line bg-white p-8 sm:p-12">
-                <div class="text-3xl text-terracotta">“</div>
-                <p class="mt-4 text-xl font-medium leading-8">O atendimento é acolhedor e a praticidade do leva e traz faz toda diferença na rotina.</p>
-                <p class="mt-7 text-sm font-bold">Depoimento real da BabyPet — substituir antes da publicação</p>
-              </div>
-            </article>
-            <article class="min-w-full px-2">
-              <div class="rounded-[2rem] border border-line bg-white p-8 sm:p-12">
-                <div class="text-3xl text-terracotta">“</div>
-                <p class="mt-4 text-xl font-medium leading-8">Meu pet voltou tranquilo, cheiroso e muito bem cuidado. Foi uma experiência excelente.</p>
-                <p class="mt-7 text-sm font-bold">Depoimento real da BabyPet — substituir antes da publicação</p>
-              </div>
-            </article>
-            <article class="min-w-full px-2">
-              <div class="rounded-[2rem] border border-line bg-white p-8 sm:p-12">
-                <div class="text-3xl text-terracotta">“</div>
-                <p class="mt-4 text-xl font-medium leading-8">O atendimento próximo e a atenção aos detalhes fizeram a gente voltar.</p>
-                <p class="mt-7 text-sm font-bold">Depoimento real da BabyPet — substituir antes da publicação</p>
-              </div>
-            </article>
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-[.2em] text-sage">Avaliações no Google</p>
+            <h2 class="mt-4 text-4xl font-extrabold tracking-[-.035em] sm:text-5xl">Quem já conhece a BabyPet.</h2>
+            <p class="mt-5 max-w-xl leading-7 text-ink/60">Avaliações reais enviadas pelos clientes no Google. Veja cada uma diretamente nas imagens.</p>
           </div>
+          <a href="https://www.google.com/maps?sca_esv=aad93e118372d4df&output=search&q=babypet+petshop" target="_blank" rel="noopener noreferrer" class="btn inline-flex rounded-full bg-ink px-6 py-4 font-bold text-white">Ver no Google Maps →</a>
         </div>
-
-        <div class="mt-7 flex items-center justify-center gap-3">
-          <button id="prev-testimonial" class="grid h-11 w-11 place-items-center rounded-full border border-line bg-white" aria-label="Depoimento anterior">←</button>
-          <div id="testimonial-dots" class="flex gap-2" aria-label="Selecionar depoimento"></div>
-          <button id="next-testimonial" class="grid h-11 w-11 place-items-center rounded-full border border-line bg-white" aria-label="Próximo depoimento">→</button>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <a href="https://www.google.com/maps?sca_esv=aad93e118372d4df&output=search&q=babypet+petshop" target="_blank" rel="noopener noreferrer" class="reveal block overflow-hidden rounded-3xl border border-line bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><img src="images/avaliacao-1.png" alt="Avaliação real da BabyPet no Google" class="h-auto w-full rounded-2xl" loading="lazy"></a>
+          <a href="https://www.google.com/maps?sca_esv=aad93e118372d4df&output=search&q=babypet+petshop" target="_blank" rel="noopener noreferrer" class="reveal block overflow-hidden rounded-3xl border border-line bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><img src="images/avaliacao-2.png" alt="Avaliação real da BabyPet no Google" class="h-auto w-full rounded-2xl" loading="lazy"></a>
+          <a href="https://www.google.com/maps?sca_esv=aad93e118372d4df&output=search&q=babypet+petshop" target="_blank" rel="noopener noreferrer" class="reveal block overflow-hidden rounded-3xl border border-line bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"><img src="images/avaliacao-3.png" alt="Avaliação real da BabyPet no Google" class="h-auto w-full rounded-2xl" loading="lazy"></a>
         </div>
       </div>
     </section>
@@ -260,13 +237,9 @@
               <div class="space-y-8">
                 <div><p class="text-xs font-bold uppercase tracking-wider text-white/40">Endereço</p><p class="mt-2 font-semibold">SC-445, 272 — Pedreiras, Balneário Rincão</p></div>
                 <div><p class="text-xs font-bold uppercase tracking-wider text-white/40">WhatsApp</p><p class="mt-2 font-semibold">(48) 9649-5772</p></div>
-                <div><p class="text-xs font-bold uppercase tracking-wider text-white/40">Horário</p><p class="mt-2 font-semibold">Segunda a sábado · 08h às 18h <span class="font-normal text-white/40">— confirmar</span></p></div>
+                <div><p class="text-xs font-bold uppercase tracking-wider text-white/40">Horário</p><p class="mt-2 font-semibold">Segunda a sexta · 08h30 às 19h<br>Sábado · 08h30 às 13h</p></div>
               </div>
-              <div class="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-                <div class="flex h-40 items-center justify-center text-center text-sm text-white/45">
-                  <div><span class="text-2xl">⌖</span><p class="mt-2">Mapa da localização<br>será configurado na versão final</p></div>
-                </div>
-              </div>
+              <div class="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-white/5"><iframe title="Localização da BabyPet no Google Maps" src="https://www.google.com/maps?q=BabyPet%20petshop%2C%20SC-445%2C%20272%2C%20Pedreiras%2C%20Balne%C3%A1rio%20Rinc%C3%A3o%20SC&output=embed" class="h-64 w-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             </div>
           </div>
         </div>
