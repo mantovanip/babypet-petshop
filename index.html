@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="BabyPet Petshop — banho, tosa, leva e traz, acessórios, rações e atendimento especial em Balneário Rincão e região.">
   <meta name="theme-color" content="#F8F6F0">
-  <title>BabyPet Petshop | Cuidado que chega até você</title>
+  <title>BabyPet Petshop | Tudo que o seu Pet precisa, está aqui!</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,33 +33,14 @@
     }
   </script>
 
-  <style>
-    html { scroll-behavior: smooth; }
-    body { background:#F8F6F0; color:#2B2D42; font-family:Inter,sans-serif; }
-    h1,h2,h3,h4 { font-family:'Plus Jakarta Sans',sans-serif; }
-    .header-scrolled { background:rgba(248,246,240,.92)!important; box-shadow:0 8px 30px rgba(43,45,66,.06); border-color:rgba(229,224,216,.95)!important; }
-    .reveal { opacity:0; transform:translateY(24px); transition:opacity .75s ease, transform .75s ease; }
-    .reveal.is-visible { opacity:1; transform:translateY(0); }
-    .btn { transition:transform .25s ease, box-shadow .25s ease, background-color .25s ease; }
-    .btn:hover { transform:translateY(-3px); box-shadow:0 12px 25px rgba(43,45,66,.12); }
-    .service-card { transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease; }
-    .service-card:hover { transform:translateY(-7px); border-color:#E07A5F; box-shadow:0 18px 40px rgba(43,45,66,.08); }
-    .pet-image { transition:transform .6s cubic-bezier(.2,.8,.2,1); }
-    .gallery-card:hover .pet-image { transform:scale(1.045); }
-    .no-scrollbar::-webkit-scrollbar { display:none; }
-    .no-scrollbar { scrollbar-width:none; }
-  </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header id="site-header" class="fixed top-0 left-0 right-0 z-50 border-b border-transparent bg-cream/70 backdrop-blur-md transition-all duration-300">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
       <a href="#inicio" class="group flex items-center gap-3" aria-label="BabyPet início">
-        <span class="grid h-11 w-11 place-items-center rounded-2xl bg-terracotta text-white shadow-sm">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M7.5 11.2c-1.7 0-3.1-1.6-3.1-3.5S5.8 4.2 7.5 4.2s3.1 1.6 3.1 3.5-1.4 3.5-3.1 3.5Zm9 0c-1.7 0-3.1-1.6-3.1-3.5s1.4-3.5 3.1-3.5 3.1 1.6 3.1 3.5-1.4 3.5-3.1 3.5ZM12 21c-3.2 0-5.8-1.8-5.8-4.2 0-2.1 1.8-3.7 4.2-4.2.6-.1 1.6-.1 2.2 0 2.4.5 4.2 2.1 4.2 4.2C17.8 19.2 15.2 21 12 21Z" fill="currentColor"/>
-          </svg>
-        </span>
+        <span class="grid h-11 w-11 place-items-center overflow-hidden rounded-2xl bg-white"><img src="images/logo.png" alt="BabyPet" class="h-full w-full object-contain"></span>
         <span class="font-display text-xl font-extrabold tracking-tight">BabyPet<span class="text-terracotta">.</span></span>
       </a>
 
@@ -68,7 +51,7 @@
         <a class="text-sm font-semibold text-ink/70 transition hover:text-terracotta" href="#contato">Contato</a>
       </nav>
 
-      <a href="https://wa.me/5548999999999?text=Olá%20BabyPet!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn hidden rounded-full bg-terracotta px-5 py-3 text-sm font-bold text-white lg:inline-flex">
+      <a href="https://wa.me/554896495772?text=Olá%20BabyPet!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn hidden rounded-full bg-terracotta px-5 py-3 text-sm font-bold text-white lg:inline-flex">
         Agendar pelo WhatsApp
       </a>
 
@@ -83,7 +66,7 @@
         <a href="#leva-traz" class="mobile-link font-semibold">Leva &amp; Traz</a>
         <a href="#avaliacoes" class="mobile-link font-semibold">Depoimentos</a>
         <a href="#contato" class="mobile-link font-semibold">Contato</a>
-        <a href="https://wa.me/5548999999999?text=Olá%20BabyPet!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn rounded-full bg-terracotta px-5 py-3 text-center font-bold text-white">Agendar pelo WhatsApp</a>
+        <a href="https://wa.me/554896495772?text=Olá%20BabyPet!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn rounded-full bg-terracotta px-5 py-3 text-center font-bold text-white">Agendar pelo WhatsApp</a>
       </nav>
     </div>
   </header>
@@ -97,13 +80,13 @@
             Balneário Rincão e região
           </div>
           <h1 class="max-w-3xl text-5xl font-extrabold leading-[1.04] tracking-[-.045em] sm:text-6xl lg:text-7xl">
-            Cuidado de verdade para quem faz parte da família.
+            Tudo que o seu Pet precisa, está aqui!
           </h1>
           <p class="mt-7 max-w-xl text-lg leading-8 text-ink/65">
             Banho, tosa, produtos e um serviço leva e traz pensado para deixar a rotina do tutor mais simples — e a experiência do seu pet muito mais tranquila.
           </p>
           <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="https://wa.me/5548999999999?text=Olá%20BabyPet!%20Quero%20agendar%20um%20horário." target="_blank" rel="noopener noreferrer" class="btn inline-flex items-center justify-center rounded-full bg-terracotta px-7 py-4 font-bold text-white">
+            <a href="https://wa.me/554896495772?text=Olá%20BabyPet!%20Quero%20agendar%20um%20horário." target="_blank" rel="noopener noreferrer" class="btn inline-flex items-center justify-center rounded-full bg-terracotta px-7 py-4 font-bold text-white">
               Quero agendar
               <span class="ml-2">→</span>
             </a>
@@ -115,15 +98,15 @@
           <div class="mt-11 grid max-w-xl grid-cols-2 gap-5 border-t border-line pt-7 sm:grid-cols-3">
             <div>
               <strong class="font-display text-2xl">+1.000</strong>
-              <p class="mt-1 text-xs leading-5 text-ink/55">banhos realizados</p>
+              <p class="mt-1 text-xs leading-5 text-ink/55">atendimento para seu pet</p>
             </div>
             <div>
               <strong class="font-display text-2xl">Leva &amp; Traz</strong>
-              <p class="mt-1 text-xs leading-5 text-ink/55">em Rincão e região</p>
+              <p class="mt-1 text-xs leading-5 text-ink/55">toda a região</p>
             </div>
             <div class="hidden sm:block">
               <strong class="font-display text-2xl">Cuidado</strong>
-              <p class="mt-1 text-xs leading-5 text-ink/55">com atenção aos detalhes</p>
+              <p class="mt-1 text-xs leading-5 text-ink/55">atendimento próximo</p>
             </div>
           </div>
         </div>
@@ -185,7 +168,7 @@
           <p class="text-xs font-bold uppercase tracking-[.2em] text-sage">Nosso diferencial</p>
           <h2 class="mt-4 text-4xl font-extrabold tracking-[-.035em] sm:text-5xl">Você agenda. A BabyPet cuida do resto.</h2>
           <p class="mt-6 leading-7 text-ink/60">O Leva &amp; Traz foi pensado para facilitar sua rotina sem transformar o cuidado do seu pet em mais uma tarefa.</p>
-          <a href="https://wa.me/5548999999999?text=Olá%20BabyPet!%20Quero%20saber%20como%20funciona%20o%20Leva%20e%20Traz." target="_blank" rel="noopener noreferrer" class="btn mt-8 inline-flex rounded-full bg-ink px-6 py-4 font-bold text-white">Consultar disponibilidade</a>
+          <a href="https://wa.me/554896495772?text=Olá%20BabyPet!%20Quero%20saber%20como%20funciona%20o%20Leva%20e%20Traz." target="_blank" rel="noopener noreferrer" class="btn mt-8 inline-flex rounded-full bg-ink px-6 py-4 font-bold text-white">Consultar disponibilidade</a>
         </div>
 
         <div class="grid gap-4">
@@ -271,12 +254,12 @@
               <p class="text-xs font-bold uppercase tracking-[.2em] text-[#BFD7C9]">Vamos cuidar dele?</p>
               <h2 class="mt-5 max-w-2xl text-4xl font-extrabold tracking-[-.035em] sm:text-5xl">Seu pet merece uma rotina mais leve.</h2>
               <p class="mt-6 max-w-xl leading-7 text-white/60">Fale com a BabyPet pelo WhatsApp e consulte horários, serviços e disponibilidade do Leva &amp; Traz.</p>
-              <a href="https://wa.me/5548999999999?text=Olá%20BabyPet!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn mt-9 inline-flex rounded-full bg-terracotta px-7 py-4 font-bold text-white">Agendar pelo WhatsApp →</a>
+              <a href="https://wa.me/554896495772?text=Olá%20BabyPet!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" class="btn mt-9 inline-flex rounded-full bg-terracotta px-7 py-4 font-bold text-white">Agendar pelo WhatsApp →</a>
             </div>
             <div class="border-t border-white/10 bg-white/5 p-8 sm:p-12 lg:border-l lg:border-t-0 lg:p-16">
               <div class="space-y-8">
-                <div><p class="text-xs font-bold uppercase tracking-wider text-white/40">Endereço</p><p class="mt-2 font-semibold">SC-445, Balneário Rincão — SC</p></div>
-                <div><p class="text-xs font-bold uppercase tracking-wider text-white/40">WhatsApp</p><p class="mt-2 font-semibold">(48) 99999-9999 <span class="font-normal text-white/40">— substituir</span></p></div>
+                <div><p class="text-xs font-bold uppercase tracking-wider text-white/40">Endereço</p><p class="mt-2 font-semibold">SC-445, 272 — Pedreiras, Balneário Rincão</p></div>
+                <div><p class="text-xs font-bold uppercase tracking-wider text-white/40">WhatsApp</p><p class="mt-2 font-semibold">(48) 9649-5772</p></div>
                 <div><p class="text-xs font-bold uppercase tracking-wider text-white/40">Horário</p><p class="mt-2 font-semibold">Segunda a sábado · 08h às 18h <span class="font-normal text-white/40">— confirmar</span></p></div>
               </div>
               <div class="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
@@ -298,82 +281,10 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/5548999999999?text=Olá%20BabyPet!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" aria-label="Falar com a BabyPet pelo WhatsApp" class="fixed bottom-5 right-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-terracotta text-white shadow-lg transition hover:-translate-y-1">
+  <a href="https://wa.me/554896495772?text=Olá%20BabyPet!%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer" aria-label="Falar com a BabyPet pelo WhatsApp" class="fixed bottom-5 right-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-terracotta text-white shadow-lg transition hover:-translate-y-1">
     <span class="text-xl">↗</span>
   </a>
 
-  <script>
-    const header = document.getElementById('site-header');
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    window.addEventListener('scroll', () => {
-      header.classList.toggle('header-scrolled', window.scrollY > 20);
-    }, { passive: true });
-
-    menuBtn.addEventListener('click', () => {
-      const open = !mobileMenu.classList.contains('hidden');
-      mobileMenu.classList.toggle('hidden', open);
-      menuBtn.setAttribute('aria-expanded', String(!open));
-    });
-
-    document.querySelectorAll('.mobile-link').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        menuBtn.setAttribute('aria-expanded', 'false');
-      });
-    });
-
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.reveal').forEach((el, index) => {
-      el.style.transitionDelay = Math.min(index * 35, 180) + 'ms';
-      revealObserver.observe(el);
-    });
-
-    const track = document.getElementById('testimonial-track');
-    const dots = document.getElementById('testimonial-dots');
-    const total = track.children.length;
-    let current = 0;
-
-    for (let i = 0; i < total; i++) {
-      const dot = document.createElement('button');
-      dot.className = 'h-2 w-2 rounded-full bg-ink/20 transition-all';
-      dot.setAttribute('aria-label', 'Ir para depoimento ' + (i + 1));
-      dot.addEventListener('click', () => goTo(i));
-      dots.appendChild(dot);
-    }
-
-    function goTo(index) {
-      current = (index + total) % total;
-      track.style.transform = 'translateX(-' + (current * 100) + '%)';
-      [...dots.children].forEach((dot, i) => {
-        dot.classList.toggle('w-6', i === current);
-        dot.classList.toggle('bg-terracotta', i === current);
-        dot.classList.toggle('bg-ink/20', i !== current);
-      });
-    }
-
-    document.getElementById('prev-testimonial').addEventListener('click', () => goTo(current - 1));
-    document.getElementById('next-testimonial').addEventListener('click', () => goTo(current + 1));
-    goTo(0);
-
-    let autoSlide = setInterval(() => goTo(current + 1), 6000);
-    [document.getElementById('prev-testimonial'), document.getElementById('next-testimonial'), dots].forEach(el => {
-      el.addEventListener('click', () => {
-        clearInterval(autoSlide);
-        autoSlide = setInterval(() => goTo(current + 1), 6000);
-      });
-    });
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
